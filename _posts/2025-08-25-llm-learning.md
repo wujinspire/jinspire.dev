@@ -3,7 +3,6 @@ layout: post
 title: "What are some practical implications of LLM training for my own learning process?"
 date: 2025-08-25
 lang: en
-published: true
 ---
 
 I recently learned more about how LLMs are trained, and I began to notice parallels with **my own learning process**.
