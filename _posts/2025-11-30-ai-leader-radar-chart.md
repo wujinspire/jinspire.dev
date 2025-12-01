@@ -1,0 +1,93 @@
+---
+layout: post
+title: "Top AI Leaders - Ability Radar"
+date: 2025-11-30
+lang: en
+---
+
+Here is a visualization of how Gemini 3 perceives the abilities of top AI leaders across different dimensions. I intentionally made use of the full scale of 1-10 to avoid clustering around the median.
+
+![Top 9 AI Leaders Ability Radar](/assets/images/posts/top_9_ability_radar.png)
+
+---
+
+# Prompt Used
+
+Below is the prompt used to generate this data. I intentionally made use of the full scale of 1-10 to avoid clustering around the median.
+
+## AI Leader Influence Scoring Standards (0-10)
+
+Please score each AI figure on a scale of 0-10 based on the following 6 dimensions.
+**Scoring Principle: Please make full use of the 1-10 range, avoiding clustering around the median.**
+
+## 1. Models – Original Architecture/Paradigm
+
+**Definition**: Original contributions to AI model architecture and algorithmic paradigms. Includes proposing new architectures, core algorithmic innovations, and breakthroughs in training methods.
+
+**Reference Points**:
+- **10**: Ashish Vaswani – First author of the Transformer architecture, revolutionized the AI paradigm.
+- **7**: Alec Radford – Primary architect of GPT series/CLIP, established the paradigm for large-scale Generative Pre-training application.
+- **4**: Andrej Karpathy – Promoter of early RNN/LSTM application paradigms, excellent educator and practitioner, but core originality is slightly below architecture proposers.
+- **1**: Sam Altman – Business leader, no contribution to model architecture.
+
+## 2. Infra – Systems & Distributed Engineering
+
+**Definition**: Contributions to AI infrastructure, training systems, distributed computing, and hardware optimization at the engineering level.
+
+**Reference Points**:
+- **10**: Jeff Dean – Chief Architect of Google's large-scale distributed systems (MapReduce/BigTable/TensorFlow).
+- **7**: Greg Brockman – Engineering setup of OpenAI's massive training clusters and engineering implementation of Scaling Laws.
+- **4**: Alexandr Wang – Founder of Scale AI, built core data labeling and processing infrastructure, but not low-level systems.
+- **1**: Nick Bostrom – Philosopher, no engineering background.
+
+## 3. Research Impact – Academic Influence
+
+**Definition**: Influence in academia, including paper citations, pioneering research, talent cultivation, and defining research directions.
+
+**Reference Points**:
+- **10**: Geoffrey Hinton – Godfather of Deep Learning, Nobel/Turing Prize winner, academic titan.
+- **7**: David Silver – Chief Scientist at DeepMind, core author of AlphaGo/AlphaZero, absolute authority in Reinforcement Learning.
+- **4**: Timnit Gebru – Well-known researcher in AI Ethics and Bias, influential in specific areas but limited breadth.
+- **1**: Jensen Huang – Industry leader, no academic research output.
+
+## 4. Product / Practicality – Product & Real-world Application
+
+**Definition**: Ability to translate AI technology into actual products, services, or applications; user scale and actual business impact of products.
+
+**Reference Points**:
+- **10**: Sam Altman – Pushed ChatGPT to the world, defined the product form and business model of AIGC.
+- **7**: Mira Murati / David Holz – Mira led the engineering execution and release of ChatGPT/DALL-E; David built Midjourney, a highly profitable vertical product.
+- **4**: Clement Delangue – CEO of Hugging Face, built a successful developer community product, but C-side penetration is lower than ChatGPT.
+- **1**: Yoshua Bengio – Focused on fundamental research, rarely has direct consumer-facing products.
+
+## 5. Leadership / Judgment – Leadership & Strategic Judgment
+
+**Definition**: Organizational leadership, strategic judgment, team building, and quality of key decisions.
+
+**Reference Points**:
+- **10**: Jensen Huang – Led Nvidia through 30-year cycles, accurately bet on AI hardware, helmsman of a trillion-dollar empire.
+- **7**: Satya Nadella – CEO of Microsoft, decisively invested in OpenAI and reshaped Microsoft's strategic judgment.
+- **4**: Arthur Mensch – CEO of Mistral AI, leader of Europe's strongest AI startup, showed good early leadership.
+- **1**: Ashish Vaswani – Top researcher, but the turbulence in founding Adept/Essential shows leadership remains to be proven.
+
+## 6. Wealth / Resources – Wealth & Resource Mobilization
+
+**Definition**: Personal wealth, mobilizable capital, influence on AI investment, resource integration ability.
+
+**Reference Points**:
+- **10**: Elon Musk – World's richest person, owns multi-dimensional top resources like xAI, Tesla clusters, Twitter data.
+- **7**: Eric Schmidt – Former Google CEO, top tech billionaire and core connector in politics and business.
+- **4**: Alexandr Wang – One of the youngest self-made billionaires, abundant resources but less than giants.
+- **1**: Typical University Professor – Has academic resources but lacks large-scale capital mobilization ability.
+
+## Output Format
+
+Please output in table format:
+
+Name | Models | Infra | Research | Product | Leadership | Wealth | Total | Brief Comment (One sentence)
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+Example | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Comment...
+
+
+
+![Top 50 AI Leaders Ability Radar](/assets/images/posts/top_50_ability_rader.png)

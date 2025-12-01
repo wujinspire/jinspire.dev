@@ -6,8 +6,8 @@ lang: en
 ---
 
 - Congratulations to **Yoshua Bengio** for hitting **1 million citations**!
-- I'm always wondering who has **the most citations**, also the **top 10**.
-- **Surprisingly, search and even deep research are not finding the correct results**, and hallucinate a lot - althrough it's fairly **simple** to verify.
+- I'm always wondering who has **the most citations**, also the **top 10**. So I used AI to help me find the answer.
+- **Surprisingly, AI search and even deep research are not finding the correct results**, and hallucinating a lot - althrough it's really **simple** to verify.
 - Scores:
   - GPT 5 + Web Search: **3.66** / 10
   - GPT 5 Deep Research: **2.66** / 10
@@ -16,7 +16,7 @@ lang: en
   - Claude 4.5 Sonnect Research: **3** / 10
   - Manus: server down
   - **Perplexity**: 🥉 **4.66** / 10
-- I believe in AI for research and general browser use, but it seems the claims around AI development are not as impressive as I expected. Seems AGI is still far away?
+- I believe in AI for research and general browser use, but it seems AI is not developing as fast as I expected. AGI is still far away?
 
 
 # The Story
