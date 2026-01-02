@@ -14,8 +14,8 @@ title: Artifacts
     </a>
 
     <a href="https://fiction.jinspire.dev" class="project-card" target="_blank" rel="noopener">
-      <h2>AI时代的文学实验</h2>
-      <p>War of AI · 朝花夕拾AI篇 · 短篇科幻</p>
+      <h2>科幻小说</h2>
+      <p>关于AI的科幻故事</p>
     </a>
   </div>
 </div>
