@@ -44,7 +44,7 @@ lang: en
 今年，英文水平又有了显著提升<br>
 
 然而也是
-在今年，收到了史无前例的rejection letters<br>
+在今年，收到了史无前例的多的rejection letters<br>
 在今年，分了个手，再次开始享受独处
 
 
