@@ -130,7 +130,7 @@ fiction.jinspire.dev<br>
 
 
 # 7 分享几个有感触的演讲、文章<br>
-张一鸣微博：“关于勤奋，就我所知，罕有成功者不是工作时间极长的:通用电气的CEO每周工作一百小时，坚持了至少十年。”<br>
+[张一鸣微博](https://hellowac.github.io/other/zym_weibo/)：“关于勤奋，就我所知，罕有成功者不是工作时间极长的:通用电气的CEO每周工作一百小时，坚持了至少十年。”<br>
 黄仁勋在Stanford的演讲，“希望你痛苦”<br>
 Mark Zuckerberg评论《社交网络》“They [the filmmakers] just couldn’t wrap their head around the idea that someone might build something because they like building things.”<br>
 哲学/人生/宗教《This is Water》<br>
