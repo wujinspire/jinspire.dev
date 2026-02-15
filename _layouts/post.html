@@ -3,13 +3,26 @@ layout: default
 ---
 <article class="content">
     <h1>{{ page.title }}</h1>
-    <span class="date">
-        {% if page.lang == 'zh' %}
-            {{ page.date | date: "%Y年%m月%d日" }}
-        {% else %}
-            {{ page.date | date: "%B %d, %Y" }}
+    <div class="post-meta">
+        <span class="date">
+            {% if page.lang == 'zh' %}
+                {{ page.date | date: "%Y年%m月%d日" }}
+            {% else %}
+                {{ page.date | date: "%B %d, %Y" }}
+            {% endif %}
+        </span>
+        {% if page.pair %}
+        <span class="lang-switch">
+            {% assign pair_url = page.url | replace: page.lang, page.pair | split: '-' | last | prepend: '-' %}
+            {% for post in site.posts %}
+                {% if post.url contains page.pair %}
+                <a href="{{ post.url | relative_url }}">{% if page.lang == 'zh' %}EN{% else %}中文{% endif %}</a>
+                {% break %}
+                {% endif %}
+            {% endfor %}
+        </span>
         {% endif %}
-    </span>
+    </div>
 
     <!-- Catalog trigger moved to header (top-left); FAB removed -->
 

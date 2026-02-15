@@ -2,16 +2,18 @@
 layout: default
 ---
 <section class="catalog">
-    {% for post in site.posts %}
-        <a class="post-card" href="{{ post.url | relative_url }}">
-            <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">
-                {{ post.date | date: "%b %d, %Y" }}
-            </time>
-            <h2 class="post-card__title">{{ post.title }}</h2>
-            {% if post.excerpt %}
-            <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-            {% endif %}
-            <span class="post-card__arrow" aria-hidden="true">Read →</span>
-        </a>
-    {% endfor %}
-    </section>
+{% for post in site.posts %}
+    <a class="post-card" href="{{ post.url | relative_url }}" data-lang="{{ post.lang | default: 'en' }}">
+        <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%b %d, %Y" }}
+        </time>
+        <h2 class="post-card__title">{{ post.title }}</h2>
+        {% if post.excerpt %}
+        <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        {% endif %}
+        <span class="post-card__arrow" aria-hidden="true">Read →</span>
+    </a>
+{% endfor %}
+</section>
+
+{% include lang-filter.html %}

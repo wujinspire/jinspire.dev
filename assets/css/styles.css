@@ -509,7 +509,36 @@ body.catalog-open { overflow: hidden; }
     text-align: start;
 }
 
-/* Improve date display */
+/* Post meta (date + language switch) */
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+.post-meta .date {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+}
+
+.lang-switch a {
+    font-size: 0.85rem;
+    color: #888;
+    text-decoration: none;
+    padding: 2px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.lang-switch a:hover {
+    color: #333;
+    border-color: #999;
+}
+
+/* Improve date display (fallback for non-paired posts) */
 .date {
     font-size: 0.95rem;
     color: #666;
@@ -893,4 +922,32 @@ body.catalog-open { overflow: hidden; }
     .project-card:hover {
         border-color: #66b3ff;
     }
+}
+
+/* Language tabs */
+.lang-tabs {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.lang-tab {
+    padding: 0.25rem 0.7rem;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    background: transparent;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lang-tab:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.lang-tab.active {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
 }

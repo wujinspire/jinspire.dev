@@ -1,5 +1,6 @@
 # Jekyll build output
 _site/
+_posts/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata

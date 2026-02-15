@@ -1,0 +1,20 @@
+<script>
+(function() {
+    const tabs = document.querySelectorAll('.lang-tab');
+    const items = document.querySelectorAll('[data-lang]');
+    const stored = localStorage.getItem('lang') || 'en';
+
+    function setLang(lang) {
+        tabs.forEach(t => t.classList.toggle('active', t.dataset.lang === lang));
+        items.forEach(el => {
+            if (!el.classList.contains('lang-tab')) {
+                el.style.display = el.dataset.lang === lang ? '' : 'none';
+            }
+        });
+        localStorage.setItem('lang', lang);
+    }
+
+    tabs.forEach(tab => tab.addEventListener('click', () => setLang(tab.dataset.lang)));
+    setLang(stored);
+})();
+</script>
