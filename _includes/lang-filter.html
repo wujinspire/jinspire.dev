@@ -8,7 +8,8 @@
         tabs.forEach(t => t.classList.toggle('active', t.dataset.lang === lang));
         items.forEach(el => {
             if (!el.classList.contains('lang-tab')) {
-                el.style.display = el.dataset.lang === lang ? '' : 'none';
+                const langs = el.dataset.lang.split(' ');
+                el.style.display = langs.includes(lang) ? '' : 'none';
             }
         });
         localStorage.setItem('lang', lang);
