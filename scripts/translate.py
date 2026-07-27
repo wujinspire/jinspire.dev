@@ -17,7 +17,7 @@ POSTS_DIR = ROOT / "_posts"
 load_dotenv(ROOT.parent / ".env")
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-MODEL = "gemini-3-pro-preview"
+MODEL = "gemini-3.1-pro-preview"
 
 SYSTEM_PROMPT = """You are a professional translator. Translate the given blog post content.
 Preserve all markdown formatting, code blocks, links, and images exactly.
