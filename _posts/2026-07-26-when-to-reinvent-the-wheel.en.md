@@ -10,10 +10,10 @@ pair: when-to-reinvent-the-wheel.zh
 TL;DR:
 
 - Agents are dominating the coding landscape.
-- Reinventing the wheel - forking and extracting what you need - is becoming the better practice.
-- Optimizing for learning has become the key to success in vibe coding.
-- Learn the basics, understand system design, avoid overengineering, and refactor in a timely manner.
-- Avoid FOMO, focus on what matters.
+- Reinventing the wheel - extracting only what you need - is becoming the better approach.
+- Optimizing for learning is the key to success in vibe coding.
+- Learn the basics, understand system design, and refactor in a timely manner.
+- Avoid FOMO about not doing enough, focus on what matters.
 - Models are improving fast, but humans are improving even faster.
 
 ## The current state of the art in coding models
@@ -31,7 +31,7 @@ First of all, what's the best coding model? Fable? GPT-5.6 Sol? Opus 5? It's a h
 - The trend continued for a while, until Anthropic became so short on compute that it started to quantize its models aggressively, which made people seek alternatives. At that time, it had not yet signed the deal with xAI/SpaceX to rent compute.
 - Gemini 3 was still useful for debugging a few complicated cases, but unfortunately, Google had gone too long without updating its models. Gemini 3.5 Pro was stuck in hell. Even worse, people were leaving - Noam Shazeer, John Jumper, and a few VPs I've worked with.
 - Back in Q1, I relied heavily on Opus 4.5 but definitely hated the degradation caused by model quantization. GPT-5.3 Codex started to catch my attention. It worked surprisingly well, despite complaints about the product lineup and confusing model names (GPT-5.3 and GPT-5.3 Codex were separate models).
-- Then OpenAI made changes. They realized that they needed to make coding their primary battlefield. They abandoned Sora and focused all their compute on Codex. They also unified the model release under GPT-5.4, which was indeed a great model that brought them back into the game.
+- Then OpenAI made changes. They realized that they needed to make coding their primary battlefield. They abandoned Sora (the video generation model) and focused all their compute on Codex. They also unified the model release under GPT-5.4, which was indeed a great model that brought them back into the game.
 - Then came GPT-5.5, a phenomenal model with which I've written most of my code. It is so token-efficient. It is so good at GitHub Actions. It is so good at reasoning. It is so good at terminal CLIs. It hallucinates much less. I'd say it was definitely the best coding model of its time.
 - But it is not omnipotent: it writes terrible frontend code. This used to seem like less of a problem, but no vibe coder can resist the temptation to build a frontend for visualization.
 - Mythos/Fable 5 seems to have changed the game again. I'd say the delayed release really gave OpenAI some time to catch up. It is definitely NOT AGI. Not even close. The mystery around it can easily disappoint people when they set the bar too high. It is indeed a good model. It is definitely much more capable than Opus 4.8. I do not think it outperforms GPT-5.5 in most domains, but it definitely does in many of them.
