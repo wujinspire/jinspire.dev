@@ -951,3 +951,255 @@ body.catalog-open { overflow: hidden; }
     color: #fff;
     border-color: #2563eb;
 }
+
+/* Reflection-inspired palette */
+:root {
+    color-scheme: light;
+    --paper: #f5f1e8;
+    --surface: #fbf8f1;
+    --ink: #122719;
+    --forest: #1f5a32;
+    --forest-dark: #153f24;
+    --muted: #5e6c61;
+    --line: #cfd6c8;
+    --wash: #e7ecdf;
+}
+
+html {
+    background: var(--paper);
+}
+
+body {
+    max-width: 920px;
+    background: var(--paper);
+    color: var(--ink);
+}
+
+a,
+footer a,
+h2 a {
+    color: var(--forest);
+}
+
+header {
+    padding: 5rem 2rem 3.75rem;
+    margin-bottom: 2.5rem;
+    background: transparent;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line);
+}
+
+header h1 {
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3.25rem;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+}
+
+header p {
+    color: var(--muted);
+    font-style: normal;
+}
+
+.projects-link {
+    color: var(--paper);
+    background: var(--forest);
+    border: 1px solid var(--forest);
+    border-radius: 2px;
+}
+
+.projects-link:hover {
+    background: var(--forest-dark);
+    border-color: var(--forest-dark);
+    transform: none;
+}
+
+.lang-tab {
+    color: var(--forest);
+    background: transparent;
+    border-color: var(--forest);
+    border-radius: 2px;
+}
+
+.lang-tab:hover {
+    color: var(--forest-dark);
+    background: var(--wash);
+}
+
+.lang-tab.active {
+    color: var(--paper);
+    background: var(--forest);
+    border-color: var(--forest);
+}
+
+.social-icon,
+.social-icon--linkedin,
+.social-icon--twitter {
+    color: var(--forest);
+    background: transparent;
+    border-color: var(--line);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    color: var(--paper);
+    background: var(--forest);
+    border-color: var(--forest);
+    box-shadow: none;
+    opacity: 1;
+}
+
+.nav-link,
+.catalog-btn,
+.catalog-close-btn,
+.back-link {
+    color: var(--forest);
+    background: transparent;
+    border-color: var(--line);
+    border-radius: 2px;
+}
+
+.nav-link:hover,
+.catalog-btn:hover,
+.catalog-close-btn:hover,
+.back-link:hover {
+    color: var(--forest-dark);
+    background: var(--wash);
+    border-color: var(--forest);
+    box-shadow: none;
+}
+
+.catalog {
+    gap: 1.25rem;
+}
+
+.post-card,
+.project-card {
+    padding: 1.5rem;
+    background: var(--surface);
+    border-color: var(--line);
+    border-radius: 2px;
+}
+
+.post-card:hover,
+.post-card:focus,
+.project-card:hover {
+    background: var(--wash);
+    border-color: var(--forest);
+    box-shadow: none;
+    transform: none;
+}
+
+.post-card__date,
+.post-card__excerpt,
+.project-card p,
+.projects-desc,
+.date,
+.post-meta,
+.post-meta .date,
+footer {
+    color: var(--muted);
+}
+
+.post-card__title,
+.project-card h2,
+.projects-page h1,
+.content h1,
+.content h2,
+.post-content h2 {
+    color: var(--ink);
+}
+
+.post-card__arrow {
+    color: var(--forest);
+}
+
+.content h1,
+.projects-page h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.content h2,
+.post-content h2 {
+    color: var(--forest-dark);
+}
+
+.content blockquote,
+.post-content blockquote {
+    background: var(--wash);
+    border-left-color: var(--forest);
+}
+
+.content pre,
+.content code {
+    background: #ebe8de;
+}
+
+.lang-switch a {
+    color: var(--forest);
+    border-color: var(--line);
+    border-radius: 2px;
+}
+
+.lang-switch a:hover {
+    color: var(--forest-dark);
+    background: var(--wash);
+    border-color: var(--forest);
+}
+
+.catalog-panel,
+.toc-container {
+    color: var(--ink);
+    background: var(--surface);
+    border-color: var(--line);
+    border-radius: 2px;
+    box-shadow: 0 12px 32px rgba(18, 39, 25, 0.12);
+}
+
+.catalog-header h3,
+.toc-container h4 {
+    color: var(--ink);
+}
+
+.catalog-list,
+.toc-container h4 {
+    border-color: var(--line);
+}
+
+.catalog-list a,
+.toc-list a {
+    color: var(--muted);
+}
+
+.toc-list a:hover,
+.toc-list a.active {
+    color: var(--forest);
+    background: var(--wash);
+    border-left-color: var(--forest);
+}
+
+article,
+footer {
+    border-color: var(--line);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    header {
+        padding: 4.5rem 1.25rem 3rem;
+    }
+
+    header h1 {
+        font-size: 2.65rem;
+    }
+
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+}
