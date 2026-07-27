@@ -26,14 +26,43 @@
             <div class="header-actions">
                 {% if page.layout == 'home' %}
                     <div class="social-links" aria-label="Social links">
-                        <a href="https://www.linkedin.com/in/jin-wu-133b1890/" class="social-icon social-icon--linkedin" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">L</a>
-                        <a href="https://x.com/Jinwu76" class="social-icon social-icon--twitter" target="_blank" rel="noopener" aria-label="Twitter" title="Twitter">X</a>
+                        <a
+                            href="https://www.linkedin.com/in/jin-wu-133b1890/"
+                            class="social-link"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="LinkedIn"
+                            title="LinkedIn"
+                        >
+                            <span class="social-icon social-icon--linkedin" aria-hidden="true">L</span>
+                            <span class="social-label">LinkedIn</span>
+                        </a>
+                        <a
+                            href="https://x.com/Jinwu76"
+                            class="social-link"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Twitter"
+                            title="Twitter"
+                        >
+                            <span class="social-icon social-icon--twitter" aria-hidden="true">X</span>
+                            <span class="social-label">Twitter</span>
+                        </a>
                     </div>
                 {% endif %}
             </div>
             <h1>{{ site.title }}</h1>
             <p>{{ site.description }}</p>
             {% if page.layout == 'home' %}
+            <div class="author-bio">
+                <span class="author-bio__label">About the author</span>
+                <p>
+                    Jin Wu, Ph.D., is an ex-Google engineer, former founder, and now
+                    Reflection AI's first Chinese employee building open models.
+                    Jin enjoys reading books, constantly studies research infrastructure,
+                    vibe codes for fun, and rarely misses a good hackathon.
+                </p>
+            </div>
             <a href="{{ '/artifacts' | relative_url }}" class="projects-link">Artifacts →</a>
             {% elsif page.layout == 'default' or page.layout == 'post' %}
             <a href="{{ '/' | relative_url }}" class="projects-link">← Home</a>

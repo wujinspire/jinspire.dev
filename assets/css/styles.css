@@ -1002,6 +1002,28 @@ header p {
     font-style: normal;
 }
 
+.author-bio {
+    max-width: 650px;
+    margin: 1.75rem auto 1.5rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.author-bio__label {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--forest);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+header .author-bio p {
+    margin: 0;
+}
+
 .projects-link {
     color: var(--paper);
     background: var(--forest);
@@ -1033,6 +1055,21 @@ header p {
     border-color: var(--forest);
 }
 
+.social-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--forest);
+    text-decoration: none;
+}
+
+.social-label {
+    color: var(--muted);
+    font-size: 0.65rem;
+    line-height: 1;
+}
+
 .social-icon,
 .social-icon--linkedin,
 .social-icon--twitter {
@@ -1042,12 +1079,19 @@ header p {
 }
 
 .social-icon:hover,
-.social-icon:focus {
+.social-icon:focus,
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
     color: var(--paper);
     background: var(--forest);
     border-color: var(--forest);
     box-shadow: none;
     opacity: 1;
+}
+
+.social-link:hover .social-label,
+.social-link:focus .social-label {
+    color: var(--forest);
 }
 
 .nav-link,
