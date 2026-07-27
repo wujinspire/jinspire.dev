@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Life of a Tensor: How LLM's Matrix Dimensions Evolve"
+excerpt: "GPT-2 maps five tokens to a [5, 768] matrix. This shape remains constant through 12 attention and MLP layers until the last row predicts a new word."
 date: 2025-02-12
 lang: en
 pair: life-of-a-tensor.zh

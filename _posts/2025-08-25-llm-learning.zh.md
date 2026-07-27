@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "LLM训练对我自身学习过程有哪些实际启示？"
+excerpt: "像大模型一样，人类需将终身学习作为预训练，在职场中有意地进行微调，并严格控制日常的奖励模型，从而避免廉价多巴胺，实现长远目标。"
 date: 2025-08-25
 lang: zh
 pair: llm-learning.en

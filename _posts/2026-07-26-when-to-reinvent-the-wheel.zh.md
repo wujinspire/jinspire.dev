@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "2026年中的编程"
+excerpt: "回顾最新的编程模型与智能体工作流，探讨何时应该复刻并提取第三方代码，以及为什么人的学习能力正在成为真正的瓶颈。"
 date: 2026-07-26
 lang: zh
 pair: when-to-reinvent-the-wheel.en

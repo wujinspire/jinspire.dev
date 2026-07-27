@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Written Before Joining"
+excerpt: "Entering an AI startup, the author wonders if they'll carry the tech stack. Inspired by AI elites, they aim to learn how talent and startups succeed."
 date: 2025-09-28
 lang: en
 pair: night-before-reflection.zh

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Visualize Generation in LLM"
+excerpt: "This post details LLM word generation, tracking matrix changes from token embeddings through QKV attention and MLP layers to predict the final word."
 date: 2025-02-18
 lang: en
 ---

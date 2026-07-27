@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AI, Startup, and Reflections"
+excerpt: "Leaving Google for a startup brought creative joy. The author embraces AI as our silicon offspring destined to replace us in a meaningless universe."
 date: 2025-02-01
 lang: en
 pair: ai-startup-learning.zh

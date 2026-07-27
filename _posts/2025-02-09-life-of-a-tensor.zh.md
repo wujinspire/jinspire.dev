@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "张量的一生：LLM矩阵维度如何演变"
+excerpt: "GPT-2将五个词元映射为[5, 768]矩阵。该维度穿过12层注意力与MLP层保持不变，最终提取末行向量预测出新词。"
 date: 2025-02-12
 lang: zh
 pair: life-of-a-tensor.en

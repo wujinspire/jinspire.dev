@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "人工智能, 创业, 与反思"
+excerpt: "作者加入初创团队重获创造之乐。他将人工智能视作将取代人类的硅基后代，认为在无意义的宇宙中，意识涌现与创造本身即是存在的全部意义。"
 date: 2025-02-01
 lang: zh
 pair: ai-startup-learning.en

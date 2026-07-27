@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "用Deepseek读《物演通论》"
+excerpt: "作者开启用Deepseek读物演通论的Gitbook系列，因排版便捷考虑将博客迁至该平台，并分享了提供该书及相关哲学课程的网站。"
 date: 2025-02-20
 lang: zh
 ---

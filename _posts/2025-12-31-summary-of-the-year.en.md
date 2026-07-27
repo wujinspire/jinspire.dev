@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Summary of the Year 2025"
+excerpt: "Surviving startup failure and rejections, the author joined Reflection AI. Embracing intense work to build AI, they found pain fuels deep growth."
 date: 2025-12-31
 lang: en
 pair: summary-of-the-year.zh

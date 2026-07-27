@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Reading 'The Evolution of Things' with DeepSeek"
+excerpt: "The author launched a Gitbook series reading The Theory of Universal Evolution with Deepseek, prefers its formatting, and shared a resource site."
 date: 2025-02-20
 lang: en
 pair: evolution-universe.zh

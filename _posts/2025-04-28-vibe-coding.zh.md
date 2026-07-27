@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Vibe Coding，提示词与新思考"
+excerpt: "作者首选Gemini编程，提倡极简提示词。开发者应掌控宏观架构，将底层代码交由AI。构建智能体需保持逻辑简单并管理好记忆。"
 date: 2025-04-28
 lang: zh
 pair: vibe-coding.en

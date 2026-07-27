@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What are some practical implications of LLM training for my own learning process?"
+excerpt: "Like LLMs, humans need lifelong learning as pretraining, intentional workplace fine-tuning, and strict control over daily reward models to thrive."
 date: 2025-08-25
 lang: en
 ---

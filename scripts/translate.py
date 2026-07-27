@@ -70,6 +70,8 @@ def parse_post(content: str) -> tuple[dict, str]:
 def build_front_matter(fm: dict, lang: str, pair_slug: str) -> str:
     """Build front matter string for generated post."""
     lines = ["---", "layout: post", f'title: "{fm.get("title", "")}"']
+    if "excerpt" in fm:
+        lines.append(f'excerpt: "{fm["excerpt"]}"')
     if "date" in fm:
         lines.append(f"date: {fm['date']}")
     lines.append(f"lang: {lang}")
@@ -110,6 +112,8 @@ def process_task(task: Task) -> tuple[str, str | None]:
 
     if task.needs_translate:
         fm["title"] = translate_text(fm.get("title", ""), task.target_lang)
+        if "excerpt" in fm:
+            fm["excerpt"] = translate_text(fm["excerpt"], task.target_lang)
         body = translate_text(task.body, task.target_lang)
     else:
         body = task.body

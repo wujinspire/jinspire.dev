@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "可视化LLM生成过程"
+excerpt: "本文通过追踪从词元嵌入、注意力机制到多层感知机的矩阵变化，详细可视化了大型语言模型生成最终单词的完整内部计算过程。"
 date: 2025-02-18
 lang: zh
 pair: visual-of-tensor.en

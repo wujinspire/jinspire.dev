@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AI still can't read Google Scholar's numbers"
+excerpt: "Testing AI models to find Google Scholar's most cited researchers reveals widespread hallucinations. Gemini 2.5 won, but AGI still seems far away."
 date: 2025-11-02
 lang: en
 pair: yoshua-1m-citation.zh

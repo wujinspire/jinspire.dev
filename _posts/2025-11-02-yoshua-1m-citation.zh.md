@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AI仍然无法读取Google Scholar的数字"
+excerpt: "测试表明，在查找谷歌学术最高引用学者时，多数AI出现严重幻觉。仅Gemini表现优异，这意味着通用人工智能依然遥远。"
 date: 2025-11-02
 lang: zh
 pair: yoshua-1m-citation.en

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "写在入职前"
+excerpt: "入职初创前，作者好奇能否扛起整个技术栈。受顶尖AI天才启发，他渴望看透人才与公司相互成就的成功循环，为未来再次创业做准备。"
 date: 2025-09-28
 lang: zh
 published: false

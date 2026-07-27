@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Coding in Mid-2026"
+excerpt: "A personal look at the latest coding models, agent workflows, when to fork and extract third-party code, and why human learning is now the real bottleneck."
 date: 2026-07-26
 lang: en
 pair: when-to-reinvent-the-wheel.zh

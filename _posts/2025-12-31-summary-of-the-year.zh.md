@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "2025年年终总结"
+excerpt: "历经创业失败与无数拒信，作者最终加入心仪的AI公司。他拥抱高强度工作与项目开发，感悟到痛苦能激发动力，并发现对创造事物的热爱。"
 date: 2025-12-31
 lang: zh
 pair: summary-of-the-year.en

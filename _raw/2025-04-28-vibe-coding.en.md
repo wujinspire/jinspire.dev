@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Vibe Coding, Prompts, and New Thoughts"
+excerpt: "The author prefers Gemini for coding and advises lazy prompting. Master high-level architecture, trust AI for basic code, and build simple agents."
 date: 2025-04-28
 lang: en
 published: false

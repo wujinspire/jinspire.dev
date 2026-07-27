@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "顶级AI领袖 - 能力雷达"
+excerpt: "本文利用Gemini 3，从模型架构、基础设施、产品及财富等六大维度，在1至10分范围内对顶级AI领袖的能力进行了量化评估。"
 date: 2025-11-30
 lang: zh
 pair: ai-leader-radar-chart.en

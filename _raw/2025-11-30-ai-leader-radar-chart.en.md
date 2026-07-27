@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Top AI Leaders - Ability Radar"
+excerpt: "The author uses Gemini 3 to evaluate top AI leaders across six dimensions including model architecture, infrastructure, and wealth on a 1-10 scale."
 date: 2025-11-30
 lang: en
 ---
