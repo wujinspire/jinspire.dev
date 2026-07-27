@@ -5,6 +5,7 @@ excerpt: "作者首选Gemini编程，提倡极简提示词。开发者应掌控�
 date: 2025-04-28
 lang: zh
 pair: vibe-coding.en
+translated_by: Gemini
 published: false
 ---
 

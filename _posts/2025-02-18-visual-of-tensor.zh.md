@@ -5,6 +5,7 @@ excerpt: "本文通过追踪从词元嵌入、注意力机制到多层感知机�
 date: 2025-02-18
 lang: zh
 pair: visual-of-tensor.en
+translated_by: Gemini
 ---
 
 # 法国的首都是___

@@ -5,6 +5,7 @@ excerpt: "Leaving Google for a startup brought creative joy. The author embraces
 date: 2025-02-01
 lang: en
 pair: ai-startup-learning.zh
+translated_by: Gemini
 ---
 
 # Recent Life

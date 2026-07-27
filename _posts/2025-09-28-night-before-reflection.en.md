@@ -5,6 +5,7 @@ excerpt: "Entering an AI startup, the author wonders if they'll carry the tech s
 date: 2025-09-28
 lang: en
 pair: night-before-reflection.zh
+translated_by: Gemini
 published: false
 ---
 

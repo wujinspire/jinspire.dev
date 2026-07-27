@@ -5,6 +5,7 @@ excerpt: "像大模型一样，人类需将终身学习作为预训练，在职�
 date: 2025-08-25
 lang: zh
 pair: llm-learning.en
+translated_by: Gemini
 ---
 
 我最近更多地了解了LLM是如何训练的，我开始注意到与 **我自己的学习过程** 的相似之处。

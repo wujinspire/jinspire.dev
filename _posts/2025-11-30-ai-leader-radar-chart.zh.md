@@ -5,6 +5,7 @@ excerpt: "本文利用Gemini 3，从模型架构、基础设施、产品及财�
 date: 2025-11-30
 lang: zh
 pair: ai-leader-radar-chart.en
+translated_by: Gemini
 ---
 
 这是Gemini 3如何感知顶级AI领袖在不同维度上的能力的视觉化。我特意使用了1-10的完整量表，以避免聚集在中位数周围。

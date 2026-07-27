@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <header>
+        <header{% if page.layout == 'home' %} class="home-header"{% endif %}>
             <div class="header-actions-left">
                 {% if page.layout == 'home' or page.title == 'Artifacts' %}
                     <div class="lang-tabs">
@@ -18,9 +18,7 @@
                         <button class="lang-tab" data-lang="zh">中文</button>
                     </div>
                 {% elsif page.layout == 'post' %}
-                    <button id="catalog-header-btn" class="nav-link" aria-haspopup="dialog" aria-controls="toc-panel">
-                        {% if page.lang == 'zh' %}目录{% else %}Catalog{% endif %}
-                    </button>
+                    <a href="{{ '/' | relative_url }}" class="nav-link">← Home</a>
                 {% endif %}
             </div>
             <div class="header-actions">
@@ -52,9 +50,10 @@
                 {% endif %}
             </div>
             <h1>{{ site.title }}</h1>
-            <p>{{ site.description }}</p>
             {% if page.layout == 'home' %}
-            <div class="author-bio">
+            <p data-lang="en">{{ site.description }}</p>
+            <p data-lang="zh">记录好奇、洞察与思考。</p>
+            <div class="author-bio" data-lang="en">
                 <span class="author-bio__label">About the author</span>
                 <p>
                     Jin Wu, Ph.D., is an ex-Google engineer, former founder, and now
@@ -63,9 +62,29 @@
                     vibe codes for fun, and rarely misses a good hackathon.
                 </p>
             </div>
-            <a href="{{ '/artifacts' | relative_url }}" class="projects-link">Artifacts →</a>
-            {% elsif page.layout == 'default' or page.layout == 'post' %}
+            <div class="author-bio" data-lang="zh">
+                <span class="author-bio__label">关于作者</span>
+                <p>
+                    武进，博士，曾任 Google 工程师，也曾创业，现为 Reflection AI
+                    首位中国员工，参与开放模型研发。他喜欢阅读，持续研究科研基础设施，
+                    也会为了兴趣做些氛围编程，并且很少错过一场精彩的黑客松。
+                </p>
+            </div>
+            <a
+                href="{{ '/artifacts' | relative_url }}"
+                class="projects-link"
+                data-lang="en"
+            >Artifacts →</a>
+            <a
+                href="{{ '/artifacts' | relative_url }}"
+                class="projects-link"
+                data-lang="zh"
+            >项目 →</a>
+            {% elsif page.layout == 'default' %}
+            <p>{{ site.description }}</p>
             <a href="{{ '/' | relative_url }}" class="projects-link">← Home</a>
+            {% else %}
+            <p>{{ site.description }}</p>
             {% endif %}
         </header>
 

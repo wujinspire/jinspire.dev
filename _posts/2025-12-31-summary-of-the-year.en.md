@@ -5,6 +5,7 @@ excerpt: "Surviving startup failure and rejections, the author joined Reflection
 date: 2025-12-31
 lang: en
 pair: summary-of-the-year.zh
+translated_by: Gemini
 ---
 
 # 1

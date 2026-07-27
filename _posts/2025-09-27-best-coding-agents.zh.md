@@ -5,6 +5,7 @@ excerpt: "这篇简短的文章探讨了当前人工智能领域的现状，主�
 date: 2025-09-26
 lang: zh
 pair: best-coding-agents.en
+translated_by: Gemini
 published: false
 ---
 

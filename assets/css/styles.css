@@ -989,6 +989,11 @@ header {
     border-bottom: 1px solid var(--line);
 }
 
+.home-header {
+    padding-bottom: 2.75rem;
+    margin-bottom: 2rem;
+}
+
 header h1 {
     color: var(--ink);
     font-family: Georgia, "Times New Roman", serif;
@@ -1010,6 +1015,10 @@ header p {
     line-height: 1.65;
 }
 
+.home-header .author-bio {
+    margin: 1.5rem auto 1rem;
+}
+
 .author-bio__label {
     display: block;
     margin-bottom: 0.35rem;
@@ -1029,6 +1038,10 @@ header .author-bio p {
     background: var(--forest);
     border: 1px solid var(--forest);
     border-radius: 2px;
+}
+
+.home-header .projects-link {
+    margin-top: 0.25rem;
 }
 
 .projects-link:hover {
@@ -1182,10 +1195,24 @@ footer {
     background: #ebe8de;
 }
 
+.content .translation-note {
+    margin: -1rem 0 2rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-style: italic;
+    text-align: left;
+}
+
 .lang-switch a {
     color: var(--forest);
     border-color: var(--line);
     border-radius: 2px;
+}
+
+.post-meta .post-catalog-btn {
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    line-height: 1.2;
 }
 
 .lang-switch a:hover {
@@ -1201,6 +1228,16 @@ footer {
     border-color: var(--line);
     border-radius: 2px;
     box-shadow: 0 12px 32px rgba(18, 39, 25, 0.12);
+}
+
+.content .toc-container {
+    position: static;
+    width: 100%;
+    max-height: none;
+    margin: 0 0 2rem;
+    padding: 1.25rem;
+    overflow: visible;
+    z-index: auto;
 }
 
 .catalog-header h3,

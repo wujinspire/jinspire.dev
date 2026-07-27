@@ -5,6 +5,7 @@ excerpt: "GPT-2将五个词元映射为[5, 768]矩阵。该维度穿过12层注�
 date: 2025-02-12
 lang: zh
 pair: life-of-a-tensor.en
+translated_by: Gemini
 published: false
 ---
 

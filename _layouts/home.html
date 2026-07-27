@@ -5,13 +5,19 @@ layout: default
 {% for post in site.posts %}
     <a class="post-card" href="{{ post.url | relative_url }}" data-lang="{{ post.lang | default: 'en' }}">
         <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%b %d, %Y" }}
+            {% if post.lang == 'zh' %}
+                {{ post.date | date: "%Y年%m月%d日" }}
+            {% else %}
+                {{ post.date | date: "%b %d, %Y" }}
+            {% endif %}
         </time>
         <h2 class="post-card__title">{{ post.title }}</h2>
         {% if post.excerpt %}
         <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
         {% endif %}
-        <span class="post-card__arrow" aria-hidden="true">Read →</span>
+        <span class="post-card__arrow" aria-hidden="true">
+            {% if post.lang == 'zh' %}阅读 →{% else %}Read →{% endif %}
+        </span>
     </a>
 {% endfor %}
 </section>

@@ -5,6 +5,7 @@ excerpt: "The author launched a Gitbook series reading The Theory of Universal E
 date: 2025-02-20
 lang: en
 pair: evolution-universe.zh
+translated_by: Gemini
 ---
 
 # The purest philosophy, the ultimate inquiry.

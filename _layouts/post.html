@@ -11,6 +11,15 @@ layout: default
                 {{ page.date | date: "%B %d, %Y" }}
             {% endif %}
         </span>
+        <button
+            id="catalog-header-btn"
+            class="nav-link post-catalog-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="toc-panel"
+        >
+            {% if page.lang == 'zh' %}目录{% else %}Catalog{% endif %}
+        </button>
         {% if page.pair %}
         <span class="lang-switch">
             {% assign pair_url = page.url | replace: page.lang, page.pair | split: '-' | last | prepend: '-' %}
@@ -24,7 +33,15 @@ layout: default
         {% endif %}
     </div>
 
-    <!-- Catalog trigger moved to header (top-left); FAB removed -->
+    {% if page.translated_by %}
+    <p class="translation-note">
+        {% if page.lang == 'zh' %}
+            原文以英文写作，中文版本由 {{ page.translated_by }} 翻译。
+        {% else %}
+            Originally written in Chinese. Translated into English by {{ page.translated_by }}.
+        {% endif %}
+    </p>
+    {% endif %}
 
     <div class="toc-container" id="toc-panel" style="display: none;">
         <h4>{% if page.lang == 'zh' %}目录{% else %}Catalog{% endif %}</h4>
@@ -58,9 +75,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (tocContainer.style.display === 'none') {
             tocContainer.style.display = 'block';
             if (targetBtn) targetBtn.textContent = isChinesePage ? '关闭目录' : 'Close';
+            if (targetBtn) targetBtn.setAttribute('aria-expanded', 'true');
         } else {
             tocContainer.style.display = 'none';
             if (targetBtn) targetBtn.textContent = isChinesePage ? '目录' : 'Catalog';
+            if (targetBtn) targetBtn.setAttribute('aria-expanded', 'false');
         }
     }
 

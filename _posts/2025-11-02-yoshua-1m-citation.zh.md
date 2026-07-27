@@ -5,6 +5,7 @@ excerpt: "测试表明，在查找谷歌学术最高引用学者时，多数AI�
 date: 2025-11-02
 lang: zh
 pair: yoshua-1m-citation.en
+translated_by: Gemini
 ---
 
 - 祝贺 **Yoshua Bengio** 达到 **100万引用**！

@@ -67,7 +67,12 @@ def parse_post(content: str) -> tuple[dict, str]:
     return front_matter, match.group(2)
 
 
-def build_front_matter(fm: dict, lang: str, pair_slug: str) -> str:
+def build_front_matter(
+    fm: dict,
+    lang: str,
+    pair_slug: str,
+    src_lang: str,
+) -> str:
     """Build front matter string for generated post."""
     lines = ["---", "layout: post", f'title: "{fm.get("title", "")}"']
     if "excerpt" in fm:
@@ -76,6 +81,8 @@ def build_front_matter(fm: dict, lang: str, pair_slug: str) -> str:
         lines.append(f"date: {fm['date']}")
     lines.append(f"lang: {lang}")
     lines.append(f"pair: {pair_slug}")
+    if src_lang != lang:
+        lines.append("translated_by: Gemini")
     if fm.get("published") == "false":
         lines.append("published: false")
     lines.append("---\n")
@@ -118,7 +125,12 @@ def process_task(task: Task) -> tuple[str, str | None]:
     else:
         body = task.body
 
-    final = build_front_matter(fm, task.target_lang, pair_slug) + body
+    final = build_front_matter(
+        fm,
+        task.target_lang,
+        pair_slug,
+        task.src_lang,
+    ) + body
     (POSTS_DIR / task.out_name).write_text(final, encoding="utf-8")
     return task.out_name, None
 
@@ -136,7 +148,8 @@ def scan_status() -> tuple[list[dict], list[Task]]:
 
         slug = get_slug(raw_path.name)
         date_prefix = raw_path.name[:10]
-        src_lang = detect_lang(body)
+        source_match = re.search(r"\.(en|zh)\.md$", raw_path.name)
+        src_lang = source_match.group(1) if source_match else detect_lang(body)
 
         en_name = f"{date_prefix}-{slug}.en.md"
         zh_name = f"{date_prefix}-{slug}.zh.md"
