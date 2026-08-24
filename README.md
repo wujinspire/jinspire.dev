@@ -9,7 +9,7 @@ Writing about curiosity, insights, and reflection.
 
 ## Site Quickstart
 - Run `bundle exec jekyll serve` to preview locally.
-- Posts live in `_posts/`, layouts in `_layouts/`, assets in `assets/`, and configuration in `_config.yml`.
+- Edit originals in `_raw/`; `_posts/` is generated serving output — do not edit it directly. Run `python scripts/translate.py` to generate the serving versions. Layouts live in `_layouts/`, assets in `assets/`, and configuration in `_config.yml`.
 
 ## Terminology
 - Home page: `http://127.0.0.1:4000/` (layout `home`).

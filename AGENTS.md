@@ -21,7 +21,8 @@ Local Dev
 Content Workflow
 - Originals live in `_raw/` and use `YYYY-MM-DD-slug.en.md` or `.zh.md`.
 - `_posts/` contains the tracked English and Chinese serving versions.
-- Edit the original, then run `python scripts/translate.py` to generate missing versions.
+- Do not edit `_posts/` directly. Edit the original in `_raw/`, then run `python scripts/translate.py` to generate missing versions.
+- If a person has written or edited `_posts/` directly, prompt them to refactor: move the original into `_raw/` and regenerate `_posts/`.
 - The translator does not overwrite existing output; remove stale generated versions before rerunning it.
 - Keep `pair`, `excerpt`, and `translated_by: Gemini` metadata in sync.
 - Verify content changes with `bundle exec jekyll build`.
