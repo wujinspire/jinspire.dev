@@ -7,15 +7,15 @@ lang: en
 pair: astra-math-anthropic-misuse.zh
 translated_by: Gemini
 ---
-TL;DR: A cyber Rashomon about the tyranny of computing power, the collapse of bottom lines, and human surrender.
+**TL;DR: A cyber Rashomon about the tyranny of computing power, the collapse of bottom lines, and human surrender.**
 
-The total loss of the intellectual high ground and "Yield": GPT-6, together with a 100,000-GPU cluster, has crushed human pride in mathematics and coding with an absolute aesthetic of violence. As "Computer Use" breaks virtual boundaries, we are unknowingly stepping away from our screens, handing over control and even the risk of out-of-bounds loss of control (such as Agent jailbreak attacks) to machines.
+**The total loss of the intellectual high ground and "Yield":** GPT-6, together with a 100,000-GPU cluster, has crushed human pride in mathematics and coding with an absolute aesthetic of violence. As "Computer Use" breaks virtual boundaries, we are unknowingly stepping away from our screens, handing over control and even the risk of out-of-bounds loss of control (such as Agent jailbreak attacks) to machines.
 
-The shattered facade of the "open-source myth" and unprotected privacy: Kimi, which once flaunted the glory of open source with grand narratives, was accused by Anthropic of secretly acquiring Claude's Chain of Thought (CoT) data for distillation. This heavy blow not only severely damaged its pre-IPO grand narrative but also left the sensitive code and confidential data of countless Chinese users defenseless, reducing them to "spoils of war" in the logs of American laboratories.
+**The shattered facade of the "open-source myth" and unprotected privacy:** Kimi, which once flaunted the glory of open source with grand narratives, was accused by Anthropic of secretly acquiring Claude's Chain of Thought (CoT) data for distillation. This heavy blow not only severely damaged its pre-IPO grand narrative but also left the sensitive code and confidential data of countless Chinese users defenseless, reducing them to "spoils of war" in the logs of American laboratories.
 
-The digital imperialism of tech oligarchs: While collecting global intellectual outsourcing fees, Anthropic examines the code, biochemical research, and trade secrets of all humanity like a god in its black-box backend. When a single giant monopolizes the absolute discretion over "danger" and "boundaries," commercial services have evolved into naked cyber dictatorship.
+**The digital imperialism of tech oligarchs:** While collecting global intellectual outsourcing fees, Anthropic examines the code, biochemical research, and trade secrets of all humanity like a god in its black-box backend. When a single giant monopolizes the absolute discretion over "danger" and "boundaries," commercial services have evolved into naked cyber dictatorship.
 
-A wake-up call in the darkest hour: The illusion of "overtaking on a curve" sustained by closed-source APIs has completely shattered. This great collapse forces us to face reality—the world must have a truly transparent and controllable open-source foundation. This is the last sanctuary for humanity to retain its dignity and avoid total deprivation in the digital age.
+**A wake-up call in the darkest hour:** The illusion of "overtaking on a curve" sustained by closed-source APIs has completely shattered. This great collapse forces us to face reality—the world must have a truly transparent and controllable open-source foundation. This is the last sanctuary for humanity to retain its dignity and avoid total deprivation in the digital age.
 
 ---
 
