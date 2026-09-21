@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Astra, Math, Jailbreak, Anthropic, Misuse"
+title: "Astra, Jailbreak, Math, Anthropic, Misuse"
 excerpt: "A cyber Rashomon about the tyranny of computing power, the collapse of ethical boundaries, and the surrender of humanity."
 date: 2026-09-12
 lang: en

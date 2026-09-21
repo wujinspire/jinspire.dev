@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Astra, Math, Jailbreak, Anthropic, Misuse"
+title: "Astra, Jailbreak, Math, Anthropic, Misuse"
 excerpt: "一场关于算力暴政、底线崩塌与人类降服的赛博罗生门。"
 date: 2026-09-12
 lang: zh
