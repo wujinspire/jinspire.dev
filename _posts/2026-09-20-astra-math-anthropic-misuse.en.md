@@ -2,7 +2,7 @@
 layout: post
 title: "Astra, Jailbreak, Math, Anthropic, Misuse"
 excerpt: "A cyber Rashomon about the tyranny of computing power, the collapse of ethical boundaries, and the surrender of humanity."
-date: 2026-09-12
+date: 2026-09-20
 lang: en
 pair: astra-math-anthropic-misuse.zh
 translated_by: Gemini
@@ -52,3 +52,7 @@ When the undercurrents of fraud, agents, API dependency, and cyber dictatorship 
 However, this might also be the brightest starting point. Only after the illusory bubble bursts do people finally realize: without a truly autonomous, secure, and controllable foundation, all prosperity is nothing but a castle built on someone else's sand.
 
 The world is still waiting for open-source models, waiting for a sanctuary that can truly house trust and human dignity. In that sanctuary, we can freely harness intelligence without being forced to surrender our entire selves to the thrones of tech empires.
+
+---
+
+I collected the AI news I came across and shared my opinions, but relied heavily on Gemini 3.1 for the writing and phrasing. Surprisingly, Astra is still terrible at professional writing.
