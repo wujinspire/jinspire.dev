@@ -258,51 +258,44 @@ body.catalog-open { overflow: hidden; }
 }
 
 .catalog {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 1px solid var(--line);
 }
 
 .post-card {
-    display: block;
-    padding: 1.2rem 1.2rem 1rem 1.2rem;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    background: #fff;
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    column-gap: 1.5rem;
+    align-items: baseline;
+    padding: 1.1rem 0.25rem;
+    border-bottom: 1px solid var(--line);
     text-decoration: none;
     color: inherit;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    transition: border-color 0.15s ease;
 }
 
 .post-card:hover,
 .post-card:focus {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    border-color: #e5e7eb;
+    border-color: var(--forest);
+}
+
+.post-card:hover .post-card__title,
+.post-card:focus .post-card__title {
+    color: var(--forest);
 }
 
 .post-card__date {
-    display: inline-block;
     font-size: 0.85rem;
-    color: #6b7280;
-    margin-bottom: 0.4rem;
 }
 
 .post-card__title {
-    font-size: 1.25rem;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    font-weight: 400;
     line-height: 1.3;
-    margin: 0 0 0.4rem 0;
-    color: #1f2937;
-}
-
-.post-card__excerpt {
-    color: #4b5563;
-    margin: 0 0 0.8rem 0;
-}
-
-.post-card__arrow {
-    color: #2563eb;
-    font-weight: 600;
+    letter-spacing: -0.01em;
 }
 
 @media (max-width: 768px) {
@@ -440,14 +433,14 @@ body.catalog-open { overflow: hidden; }
 }
 
 /* Add better typography for Chinese text */
-:lang(zh) {
+html:lang(zh) body {
     font-family: -apple-system, BlinkMacSystemFont,
                  "PingFang SC", "Hiragino Sans GB",
                  "Microsoft YaHei", "STHeiti",
                  "WenQuanYi Micro Hei",
                  sans-serif;
     line-height: 1.4;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.02em;
 }
 
 /* Improve article content readability */
@@ -665,33 +658,6 @@ body.catalog-open { overflow: hidden; }
     }
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1a1a1a;
-        color: #e0e0e0;
-    }
-
-    .content pre,
-    .content code {
-        background: #2d2d2d;
-    }
-
-    .content blockquote {
-        background: #2d2d2d;
-        border-left-color: #4a4a4a;
-    }
-
-    a {
-        color: #66b3ff;
-    }
-
-    .nav-link {
-        background: #2d2d2d;
-        color: #e0e0e0;
-    }
-}
-
 @media (min-width: 768px) {
     body {
         padding: 2rem;
@@ -905,25 +871,6 @@ body.catalog-open { overflow: hidden; }
     transform: translateY(-1px);
 }
 
-@media (prefers-color-scheme: dark) {
-    .projects-page h1 {
-        color: #e0e0e0;
-    }
-    .project-card {
-        background: #2d2d2d;
-        border-color: #444;
-    }
-    .project-card h2 {
-        color: #e0e0e0;
-    }
-    .project-card p {
-        color: #aaa;
-    }
-    .project-card:hover {
-        border-color: #66b3ff;
-    }
-}
-
 /* Language tabs */
 .lang-tabs {
     display: flex;
@@ -1127,11 +1074,6 @@ header .author-bio p {
     box-shadow: none;
 }
 
-.catalog {
-    gap: 1.25rem;
-}
-
-.post-card,
 .project-card {
     padding: 1.5rem;
     background: var(--surface);
@@ -1139,8 +1081,6 @@ header .author-bio p {
     border-radius: 2px;
 }
 
-.post-card:hover,
-.post-card:focus,
 .project-card:hover {
     background: var(--wash);
     border-color: var(--forest);
@@ -1149,7 +1089,6 @@ header .author-bio p {
 }
 
 .post-card__date,
-.post-card__excerpt,
 .project-card p,
 .projects-desc,
 .date,
@@ -1166,10 +1105,6 @@ footer {
 .content h2,
 .post-content h2 {
     color: var(--ink);
-}
-
-.post-card__arrow {
-    color: var(--forest);
 }
 
 .content h1,
@@ -1195,12 +1130,12 @@ footer {
     background: #ebe8de;
 }
 
-.content .translation-note {
+.content p.translation-note {
     margin: -1rem 0 2rem;
     color: var(--muted);
     font-size: 0.82rem;
     font-style: italic;
-    text-align: left;
+    text-align: center;
 }
 
 .lang-switch a {
@@ -1267,6 +1202,112 @@ footer {
     border-color: var(--line);
 }
 
+/* Slim post header */
+.site-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    padding: 0.25rem 0 1rem;
+    text-align: left;
+}
+
+.site-bar h1 {
+    order: -1;
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.site-bar .header-actions-left {
+    position: static;
+}
+
+.site-bar .header-actions {
+    display: none;
+}
+
+/* Post reading typography */
+.content > h1:first-child {
+    margin: 0 0 0.75rem;
+    font-size: 2.75rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.content .post-meta {
+    justify-content: center;
+    margin: 0 0 2.5rem;
+}
+
+.content .post-content {
+    font-family: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+html:lang(zh) .content .post-content {
+    font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", serif;
+}
+
+.content .post-content p {
+    margin: 0 0 1.25rem;
+    text-align: left;
+}
+
+.content .post-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.65;
+}
+
+html:lang(zh) .content .post-content p,
+html:lang(zh) .content .post-content li {
+    line-height: 1.85;
+}
+
+.content .post-content h2 {
+    margin: 3rem 0 1rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.65rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+        --paper: #121a15;
+        --surface: #18221c;
+        --ink: #e6e2d6;
+        --forest: #8cc59c;
+        --forest-dark: #b4dbbf;
+        --muted: #9ba79e;
+        --line: #2d3b32;
+        --wash: #1f2b24;
+    }
+
+    .content pre,
+    .content code {
+        background: #1c2620;
+    }
+
+    .color-grey {
+        color: #a3aca5;
+    }
+
+    .color-brown {
+        color: #d9a066;
+    }
+
+    .color-blue {
+        color: #8fb0ff;
+    }
+
+    .color-green {
+        color: #7fcf8f;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         padding: 1rem;
@@ -1280,7 +1321,16 @@ footer {
         font-size: 2.65rem;
     }
 
-    .catalog {
+    .post-card {
         grid-template-columns: 1fr;
+        row-gap: 0.2rem;
+    }
+
+    .content > h1:first-child {
+        font-size: 2.1rem;
+    }
+
+    .content .post-content h2 {
+        font-size: 1.4rem;
     }
 }

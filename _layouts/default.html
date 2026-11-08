@@ -10,7 +10,8 @@
 </head>
 <body>
     <main>
-        <header{% if page.layout == 'home' %} class="home-header"{% endif %}>
+        <header{% if page.layout == 'home' %} class="home-header"
+            {%- elsif page.layout == 'post' %} class="site-bar"{% endif %}>
             <div class="header-actions-left">
                 {% if page.layout == 'home' or page.title == 'Artifacts' %}
                     <div class="lang-tabs">
@@ -83,8 +84,6 @@
             {% elsif page.layout == 'default' %}
             <p>{{ site.description }}</p>
             <a href="{{ '/' | relative_url }}" class="projects-link">← Home</a>
-            {% else %}
-            <p>{{ site.description }}</p>
             {% endif %}
         </header>
 
