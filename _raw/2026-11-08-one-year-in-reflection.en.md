@@ -56,9 +56,9 @@ Looking back, none of this speed or scale would have been possible without the p
 
 Growing alongside this team and a fast-moving company while building so many critical pieces from scratch has been incredibly rewarding. Over this past year, I have grown more than I could have imagined:
 
-- **In knowledge:** I bridged the gap between pure large-scale infrastructure and frontier modeling - understanding not just how to keep thousands of GPUs running, but how architecture, science scale-up, pre-training, RL, and inference fit together as one unified system.
-- **In mindset and thinking:** Operating in a high-velocity startup environment taught me how to think from the company's mission first - ruthlessly prioritizing what actually moves the needle, organizing and coordinating complex big runs, driving cross-company communication and collaboration, and owning problems end-to-end.
-- **In AI use:** As someone building models every day, the way I collaborate with AI in my own engineering and thinking has also transformed completely - from shipping dozens of PRs a day, to managing tasks and communications, to running overnight autonomous research.
+- **In knowledge:** I bridged the gap between pure large-scale infrastructure and frontier modeling. Beyond knowing how to keep thousands of GPUs running at peak efficiency, I built a much deeper understanding of **model architecture**, **pre-training** at scale, and **reinforcement learning** - seeing how systems, science, training, and inference all fit together as one unified loop.
+- **In mindset and thinking:** Operating in a high-velocity startup taught me to always anchor on the mission first - ruthlessly prioritizing what actually moves the needle, organizing complex big runs, driving cross-company alignment and collaboration, and owning problems end-to-end.
+- **In AI use:** As someone building models every day, my own workflow with AI has evolved into a completely different gear - from shipping dozens of PRs a day and streamlining task management and communication, to kicking off overnight autonomous research while I sleep.
 
 One year in, and our first model is out in the world. Grateful for the team, the mission, and the journey so far - on to the next run.
 
