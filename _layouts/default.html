@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.title }}</title>
+    {%- assign meta_title = page.title | default: site.title %}
+    {%- assign meta_desc = page.excerpt | default: site.description | strip_html | normalize_whitespace
+        | truncate: 200 %}
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ meta_desc | escape }}">
+    <meta property="og:title" content="{{ meta_title | escape }}">
+    <meta property="og:description" content="{{ meta_desc | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     {% include analytics.html %}
 </head>
@@ -91,7 +103,10 @@
 
         <footer>
             <p>© {{ site.time | date: '%Y' }} {{ site.title }} · <a href="mailto:{{ site.email }}">Email</a></p>
-            <p class="footer-note">Jin is doing startup in SF and love to connect via <a href="https://www.linkedin.com/in/jin-wu-133b1890/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+            <p class="footer-note">
+                Jin is in SF building open models at Reflection AI and loves to connect via
+                <a href="https://www.linkedin.com/in/jin-wu-133b1890/" target="_blank" rel="noopener">LinkedIn</a>.
+            </p>
         </footer>
     </main>
 
