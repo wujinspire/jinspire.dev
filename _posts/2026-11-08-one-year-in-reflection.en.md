@@ -32,7 +32,7 @@ What made this journey truly rare, though, was not just scaling the cluster - it
 
 As we scaled from a handful of H100s to massive **GB300** clusters, I got to sit in on and contribute to the discussions around our transition from dense models to large-scale **MoE**, and experience firsthand how **science scales up** from small experiments to large training runs. Because people across infra, pre-training, and RL are so open and generous with their knowledge, none of these choices happen in silos. Every architecture decision is a balance between model quality, pre-training efficiency, and downstream inference - because inference speed directly dictates both how fast **RL** can generate rollouts and how practical the model is for real-world serving. Having worked across both RL and pre-training infra, it was rewarding to see how all the pieces connect across the full lifecycle of a model.
 
-Even now, I still feel the excitement every time we kick off a big run. And out of all those runs, **Beam** was born. (I actually hit my one-year mark back in September, so this post is long overdue - I was waiting for the model release to share it, and then got completely caught up in the rush around launch.)
+Even now, I still feel the excitement every time we kick off a big run. And out of all those runs, **Beam** was born. (I actually hit my one-year mark back in September, so this post is long overdue - I was waiting for the model release to share it, and then just got too busy.)
 
 
 ## Why Open Access Matters: Intelligence and Democracy
