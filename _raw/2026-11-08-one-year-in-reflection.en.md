@@ -58,7 +58,7 @@ Growing alongside this team and a fast-moving company while building so many cri
 
 - **In knowledge:** I bridged the gap between pure large-scale infrastructure and frontier modeling - understanding not just how to keep thousands of GPUs running, but how architecture, science scale-up, pre-training, RL, and inference fit together as one unified system.
 - **In mindset and thinking:** Operating in a high-velocity startup environment taught me to focus on what actually moves the needle, own problems end-to-end, and iterate without fear.
-- **In AI use:** As someone building models every day, the way I collaborate with AI in my own engineering and thinking has also transformed completely.
+- **In AI use:** As someone building models every day, the way I collaborate with AI in my own engineering and thinking has also transformed completely - from shipping dozens of PRs a day, to managing tasks and communications, to running overnight autonomous research.
 
 One year in, and our first model is out in the world. Grateful for the team, the mission, and the journey so far - on to the next run.
 
