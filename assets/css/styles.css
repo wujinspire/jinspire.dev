@@ -1079,6 +1079,18 @@ header .author-bio p {
     background: var(--surface);
     border-color: var(--line);
     border-radius: 2px;
+    overflow: hidden;
+}
+
+.project-card .project-card__art {
+    display: block;
+    margin: -1.5rem -1.5rem 1.25rem;
+    width: calc(100% + 3rem);
+    max-width: none;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .project-card:hover {
