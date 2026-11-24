@@ -21,7 +21,7 @@ title: Artifacts
     </a>
 
     <a href="https://cube.jinspire.dev" class="project-card" data-lang="zh" target="_blank" rel="noopener">
-      <img class="project-card__art" src="{{ '/assets/images/artifacts/cube.png' | relative_url }}" alt="" loading="lazy">
+      <img class="project-card__art" src="{{ '/assets/images/artifacts/cube.jpg' | relative_url }}" alt="" loading="lazy">
       <h2>魔方训练器</h2>
       <p>竞速魔方识别训练 · PLL · OLL · F2L</p>
     </a>
@@ -39,7 +39,7 @@ title: Artifacts
     </a>
 
     <a href="https://cube.jinspire.dev" class="project-card" data-lang="en" target="_blank" rel="noopener">
-      <img class="project-card__art" src="{{ '/assets/images/artifacts/cube.png' | relative_url }}" alt="" loading="lazy">
+      <img class="project-card__art" src="{{ '/assets/images/artifacts/cube.jpg' | relative_url }}" alt="" loading="lazy">
       <h2>Cube Trainer</h2>
       <p>Recognition training for speedcubing · PLL · OLL · F2L</p>
     </a>
