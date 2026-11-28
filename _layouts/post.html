@@ -44,6 +44,7 @@ layout: default
 
 <!-- 添加TOC生成和高亮脚本 -->
 <script>
+localStorage.setItem('lang', '{{ page.lang | default: "en" }}');
 document.addEventListener('DOMContentLoaded', function() {
     // 获取所有标题元素
     const headings = document.querySelectorAll('.post-content h1, .post-content h2, .post-content h3, .post-content h4');

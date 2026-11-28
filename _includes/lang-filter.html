@@ -5,6 +5,7 @@
     const stored = localStorage.getItem('lang') || 'en';
 
     function setLang(lang) {
+        document.documentElement.lang = lang;
         tabs.forEach(t => t.classList.toggle('active', t.dataset.lang === lang));
         items.forEach(el => {
             if (!el.classList.contains('lang-tab')) {

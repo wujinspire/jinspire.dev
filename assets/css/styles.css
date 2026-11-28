@@ -230,15 +230,16 @@ body.catalog-open { overflow: hidden; }
     align-items: center;
     justify-content: center;
     gap: 0.4rem;
-    padding: 0.3rem 0.65rem;         /* smaller */
+    padding: 0.25rem 0.7rem;
     background: #fff;
     color: #666;
     text-decoration: none;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 0.9rem;               /* smaller text */
+    font-family: inherit;            /* ensure same font on <button> */
+    font-size: 0.85rem;
     line-height: 1.2;                /* normalize button vs link height */
-    font: inherit;                   /* ensure same font on <button> */
+    letter-spacing: normal;
     -webkit-appearance: none;        /* remove native button styling */
     appearance: none;
     transition: all 0.2s ease;
@@ -259,7 +260,7 @@ body.catalog-open { overflow: hidden; }
 
 .post-card {
     display: grid;
-    grid-template-columns: 7rem 1fr;
+    grid-template-columns: 8rem 1fr;
     column-gap: 1.5rem;
     align-items: baseline;
     padding: 1.1rem 0.25rem;
@@ -281,6 +282,7 @@ body.catalog-open { overflow: hidden; }
 
 .post-card__date {
     font-size: 0.85rem;
+    white-space: nowrap;
 }
 
 .post-card__title {
@@ -991,13 +993,14 @@ header h1 {
 .lang-tab {
     color: var(--forest);
     background: transparent;
-    border-color: var(--forest);
+    border-color: var(--line);
     border-radius: 2px;
 }
 
 .lang-tab:hover {
     color: var(--forest-dark);
     background: var(--wash);
+    border-color: var(--forest);
 }
 
 .lang-tab.active {
@@ -1037,6 +1040,7 @@ header h1 {
     background: var(--forest);
     border-color: var(--forest);
     box-shadow: none;
+    transform: none;
     opacity: 1;
 }
 
@@ -1063,6 +1067,7 @@ header h1 {
     background: var(--wash);
     border-color: var(--forest);
     box-shadow: none;
+    transform: none;
 }
 
 .project-card {
@@ -1115,6 +1120,12 @@ footer {
     font-family: Georgia, "Times New Roman", serif;
     font-weight: 500;
     letter-spacing: -0.02em;
+}
+
+.project-card h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
 }
 
 .content h2,
@@ -1232,12 +1243,18 @@ footer {
     top: calc(100% + 0.3rem);
 }
 
-/* Post reading typography */
-.content > h1:first-child {
+/* Post & page heading typography */
+.content > h1:first-child,
+.projects-page h1 {
     margin: 0 0 0.75rem;
     font-size: 2.75rem;
     line-height: 1.2;
     text-align: center;
+}
+
+html:lang(zh) .footer-note,
+html:lang(zh) .content p.translation-note {
+    font-style: normal;
 }
 
 .content .post-meta {
@@ -1322,7 +1339,8 @@ html:lang(zh) .content .post-content li {
         display: none;
     }
 
-    .lang-tab {
+    .lang-tab,
+    .site-bar .nav-link {
         padding: 0.25rem 0.5rem;
     }
 
@@ -1335,7 +1353,8 @@ html:lang(zh) .content .post-content li {
         row-gap: 0.2rem;
     }
 
-    .content > h1:first-child {
+    .content > h1:first-child,
+    .projects-page h1 {
         font-size: 2.1rem;
     }
 

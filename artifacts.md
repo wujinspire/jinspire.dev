@@ -4,8 +4,10 @@ title: Artifacts
 ---
 
 <div class="projects-page">
-  <h1>Artifacts</h1>
-  <p class="projects-desc">Writing & creative projects</p>
+  <h1 data-lang="en">Artifacts</h1>
+  <h1 data-lang="zh">项目</h1>
+  <p class="projects-desc" data-lang="en">Writing & creative projects</p>
+  <p class="projects-desc" data-lang="zh">写作与创意项目</p>
 
   <div class="projects-grid">
     <a href="https://fiction.jinspire.dev/zh/" class="project-card" data-lang="zh" target="_blank" rel="noopener">
@@ -51,5 +53,3 @@ title: Artifacts
     </a>
   </div>
 </div>
-
-{% include lang-filter.html %}

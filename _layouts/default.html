@@ -52,8 +52,13 @@
                             <span class="social-label">Twitter</span>
                         </a>
                     </div>
+                {% elsif page.layout == 'post' %}
+                    <a href="{{ '/' | relative_url }}" class="nav-link">
+                        {% if page.lang == 'zh' %}← 首页{% else %}← Home{% endif %}
+                    </a>
                 {% else %}
-                    <a href="{{ '/' | relative_url }}" class="nav-link">← Home</a>
+                    <a href="{{ '/' | relative_url }}" class="nav-link" data-lang="en">← Home</a>
+                    <a href="{{ '/' | relative_url }}" class="nav-link" data-lang="zh">← 首页</a>
                 {% endif %}
             </div>
             <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
@@ -90,13 +95,40 @@
         {{ content }}
 
         <footer>
-            <p>© {{ site.time | date: '%Y' }} {{ site.title }} · <a href="mailto:{{ site.email }}">Email</a></p>
-            <p class="footer-note">
-                Jin is in SF building open models at Reflection AI and loves to connect via
-                <a href="https://www.linkedin.com/in/jin-wu-133b1890/" target="_blank" rel="noopener">LinkedIn</a>.
-            </p>
+            {% if page.layout == 'post' %}
+                {% if page.lang == 'zh' %}
+                    <p>© {{ site.time | date: '%Y' }} {{ site.title }} · <a href="mailto:{{ site.email }}">邮箱</a></p>
+                    <p class="footer-note">
+                        武进目前在旧金山 Reflection AI 参与开放模型研发，欢迎通过
+                        <a href="https://www.linkedin.com/in/jin-wu-133b1890/" target="_blank" rel="noopener">LinkedIn</a>
+                        交流。
+                    </p>
+                {% else %}
+                    <p>© {{ site.time | date: '%Y' }} {{ site.title }} · <a href="mailto:{{ site.email }}">Email</a></p>
+                    <p class="footer-note">
+                        Jin is in SF building open models at Reflection AI and loves to connect via
+                        <a href="https://www.linkedin.com/in/jin-wu-133b1890/" target="_blank" rel="noopener">LinkedIn</a>.
+                    </p>
+                {% endif %}
+            {% else %}
+                <p data-lang="en">© {{ site.time | date: '%Y' }} {{ site.title }} · <a href="mailto:{{ site.email }}">Email</a></p>
+                <p class="footer-note" data-lang="en">
+                    Jin is in SF building open models at Reflection AI and loves to connect via
+                    <a href="https://www.linkedin.com/in/jin-wu-133b1890/" target="_blank" rel="noopener">LinkedIn</a>.
+                </p>
+                <p data-lang="zh">© {{ site.time | date: '%Y' }} {{ site.title }} · <a href="mailto:{{ site.email }}">邮箱</a></p>
+                <p class="footer-note" data-lang="zh">
+                    武进目前在旧金山 Reflection AI 参与开放模型研发，欢迎通过
+                    <a href="https://www.linkedin.com/in/jin-wu-133b1890/" target="_blank" rel="noopener">LinkedIn</a>
+                    交流。
+                </p>
+            {% endif %}
         </footer>
     </main>
+
+    {% unless page.layout == 'post' %}
+        {% include lang-filter.html %}
+    {% endunless %}
 
 
 
