@@ -5,7 +5,8 @@ Scope
 
 Layouts & UI
 - Home page uses layout `home`; post pages use layout `post`.
-- Post pages use the slim `.site-bar` header; the home page lists posts as a date + title index.
+- All pages share the slim `.site-bar` header in `default.html`: left slot, centered site title linking Home, language tabs on the right.
+- The home page shows its intro (`.home-intro`) under the bar, then lists posts as a date + title index.
 - Colors come from the `:root` CSS variables; dark mode swaps them under `prefers-color-scheme: dark`.
 - Social icons (LinkedIn/X) appear only on the Home header.
 - Post pages expose a Catalog FAB that appears after scrolling past the header (scroll‑aware) and aligns with the content column. Avoid adding the catalog to the Home page.

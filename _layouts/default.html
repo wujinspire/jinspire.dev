@@ -22,26 +22,9 @@
 </head>
 <body>
     <main>
-        <header{% if page.layout == 'home' %} class="home-header"
-            {%- elsif page.layout == 'post' %} class="site-bar"
-            {%- elsif page.layout == 'default' %} class="page-bar"{% endif %}>
+        <header class="site-bar">
             <div class="header-actions-left">
                 {% if page.layout == 'home' %}
-                    <div class="lang-tabs">
-                        <button class="lang-tab active" data-lang="en">EN</button>
-                        <button class="lang-tab" data-lang="zh">中文</button>
-                    </div>
-                {% else %}
-                    <a href="{{ '/' | relative_url }}" class="nav-link">← Home</a>
-                {% endif %}
-            </div>
-            <div class="header-actions">
-                {% if page.layout == 'default' %}
-                    <div class="lang-tabs">
-                        <button class="lang-tab active" data-lang="en">EN</button>
-                        <button class="lang-tab" data-lang="zh">中文</button>
-                    </div>
-                {% elsif page.layout == 'home' %}
                     <div class="social-links" aria-label="Social links">
                         <a
                             href="https://www.linkedin.com/in/jin-wu-133b1890/"
@@ -66,40 +49,19 @@
                             <span class="social-label">Twitter</span>
                         </a>
                     </div>
+                {% else %}
+                    <a href="{{ '/' | relative_url }}" class="nav-link">← Home</a>
                 {% endif %}
             </div>
-            {% unless page.layout == 'default' %}<h1>{{ site.title }}</h1>{% endunless %}
-            {% if page.layout == 'home' %}
-            <p data-lang="en">{{ site.description }}</p>
-            <p data-lang="zh">记录好奇、洞察与思考。</p>
-            <div class="author-bio" data-lang="en">
-                <span class="author-bio__label">About the author</span>
-                <p>
-                    Jin Wu, Ph.D., is an ex-Google engineer, former founder, and now
-                    Reflection AI's first Chinese employee building open models.
-                    Jin enjoys reading books, constantly studies research infrastructure,
-                    vibe codes for fun, and rarely misses a good hackathon.
-                </p>
+            <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <div class="header-actions">
+                {% unless page.layout == 'post' %}
+                    <div class="lang-tabs">
+                        <button class="lang-tab active" data-lang="en">EN</button>
+                        <button class="lang-tab" data-lang="zh">中文</button>
+                    </div>
+                {% endunless %}
             </div>
-            <div class="author-bio" data-lang="zh">
-                <span class="author-bio__label">关于作者</span>
-                <p>
-                    武进，博士，曾任 Google 工程师，也曾创业，现为 Reflection AI
-                    首位中国员工，参与开放模型研发。他喜欢阅读，持续研究科研基础设施，
-                    也会为了兴趣做些氛围编程，并且很少错过一场精彩的黑客松。
-                </p>
-            </div>
-            <a
-                href="{{ '/artifacts' | relative_url }}"
-                class="projects-link"
-                data-lang="en"
-            >Artifacts →</a>
-            <a
-                href="{{ '/artifacts' | relative_url }}"
-                class="projects-link"
-                data-lang="zh"
-            >项目 →</a>
-            {% endif %}
         </header>
 
         {{ content }}

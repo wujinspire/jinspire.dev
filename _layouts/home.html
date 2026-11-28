@@ -1,6 +1,38 @@
 ---
 layout: default
 ---
+<section class="home-intro">
+    <p data-lang="en">{{ site.description }}</p>
+    <p data-lang="zh">记录好奇、洞察与思考。</p>
+    <div class="author-bio" data-lang="en">
+        <span class="author-bio__label">About the author</span>
+        <p>
+            Jin Wu, Ph.D., is an ex-Google engineer, former founder, and now
+            Reflection AI's first Chinese employee building open models.
+            Jin enjoys reading books, constantly studies research infrastructure,
+            vibe codes for fun, and rarely misses a good hackathon.
+        </p>
+    </div>
+    <div class="author-bio" data-lang="zh">
+        <span class="author-bio__label">关于作者</span>
+        <p>
+            武进，博士，曾任 Google 工程师，也曾创业，现为 Reflection AI
+            首位中国员工，参与开放模型研发。他喜欢阅读，持续研究科研基础设施，
+            也会为了兴趣做些氛围编程，并且很少错过一场精彩的黑客松。
+        </p>
+    </div>
+    <a
+        href="{{ '/artifacts' | relative_url }}"
+        class="projects-link"
+        data-lang="en"
+    >Artifacts →</a>
+    <a
+        href="{{ '/artifacts' | relative_url }}"
+        class="projects-link"
+        data-lang="zh"
+    >项目 →</a>
+</section>
+
 <section class="catalog">
 {% for post in site.posts %}
     <a class="post-card" href="{{ post.url | relative_url }}" data-lang="{{ post.lang | default: 'en' }}">

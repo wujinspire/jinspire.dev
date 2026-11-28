@@ -803,7 +803,7 @@ html:lang(zh) body {
 /* Projects page */
 .projects-page {
     text-align: center;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
 }
 
 .projects-page h1 {
@@ -936,9 +936,9 @@ header {
     border-bottom: 1px solid var(--line);
 }
 
-.home-header {
-    padding-bottom: 2.75rem;
+.home-intro {
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 header h1 {
@@ -949,9 +949,8 @@ header h1 {
     letter-spacing: -0.035em;
 }
 
-header p {
+.home-intro p {
     color: var(--muted);
-    font-style: normal;
 }
 
 .author-bio {
@@ -962,7 +961,7 @@ header p {
     line-height: 1.65;
 }
 
-.home-header .author-bio {
+.home-intro .author-bio {
     margin: 1.5rem auto 1rem;
 }
 
@@ -976,7 +975,7 @@ header p {
     text-transform: uppercase;
 }
 
-header .author-bio p {
+.author-bio p {
     margin: 0;
 }
 
@@ -987,7 +986,7 @@ header .author-bio p {
     border-radius: 2px;
 }
 
-.home-header .projects-link {
+.home-intro .projects-link {
     margin-top: 0.25rem;
 }
 
@@ -1214,13 +1213,12 @@ footer {
     border-color: var(--line);
 }
 
-/* Slim post header */
+/* Shared site bar */
 .site-bar {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    max-width: 700px;
-    margin: 0 auto 3rem;
+    margin-bottom: 2rem;
     padding: 0.25rem 0 1rem;
 }
 
@@ -1229,26 +1227,18 @@ footer {
     font-size: 1.6rem;
 }
 
-.site-bar .header-actions-left {
+.site-bar h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-bar .header-actions-left,
+.site-bar .header-actions {
     position: static;
 }
 
 .site-bar .header-actions {
-    display: none;
-}
-
-/* Slim bar for standalone pages */
-.page-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-    padding: 0.25rem 0 1rem;
-}
-
-.page-bar .header-actions-left,
-.page-bar .header-actions {
-    position: static;
+    justify-self: end;
 }
 
 /* Post reading typography */
@@ -1335,14 +1325,6 @@ html:lang(zh) .content .post-content li {
 @media (max-width: 768px) {
     body {
         padding: 1rem;
-    }
-
-    header {
-        padding: 4.5rem 1.25rem 3rem;
-    }
-
-    header h1 {
-        font-size: 2.65rem;
     }
 
     .post-card {
