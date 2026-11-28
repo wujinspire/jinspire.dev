@@ -1343,8 +1343,12 @@ html:lang(zh) .content .post-content li {
         padding: 0.25rem 0.5rem;
     }
 
+    .site-bar {
+        padding-bottom: 0.9rem;
+    }
+
     .site-tagline {
-        margin-top: 0.25rem;
+        margin-top: 0.7rem;
     }
 
     .post-card {
