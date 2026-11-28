@@ -17,7 +17,10 @@
     <meta name="twitter:card" content="summary">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link
+        rel="stylesheet"
+        href="{{ '/assets/css/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}"
+    >
     {% include analytics.html %}
 </head>
 <body>
