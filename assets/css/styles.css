@@ -1213,7 +1213,6 @@ footer {
 }
 
 .site-bar h1 {
-    align-self: end;
     margin: 0;
     font-size: 1.6rem;
     line-height: 1.2;
@@ -1231,6 +1230,15 @@ footer {
 
 .site-bar .header-actions {
     justify-self: end;
+}
+
+.site-bar .social-link {
+    position: relative;
+}
+
+.site-bar .social-label {
+    position: absolute;
+    top: calc(100% + 0.3rem);
 }
 
 .site-tagline {
@@ -1325,6 +1333,14 @@ html:lang(zh) .content .post-content li {
 @media (max-width: 768px) {
     body {
         padding: 1rem;
+    }
+
+    .site-bar .social-label {
+        display: none;
+    }
+
+    .lang-tab {
+        padding: 0.25rem 0.5rem;
     }
 
     .site-tagline {
