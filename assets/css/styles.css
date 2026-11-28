@@ -951,6 +951,19 @@ header h1 {
     line-height: 1.65;
 }
 
+.home-tagline {
+    margin: 0 0 1.5rem;
+    color: var(--muted);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(0.75rem, 3.8vw, 1.15rem);
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.home-tagline[data-lang="zh"] {
+    font-style: normal;
+}
+
 .home-intro .author-bio {
     margin: 0 auto 1rem;
 }
