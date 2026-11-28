@@ -20,17 +20,6 @@ layout: default
         >
             {% if page.lang == 'zh' %}目录{% else %}Catalog{% endif %}
         </button>
-        {% if page.pair %}
-        <span class="lang-switch">
-            {% assign pair_url = page.url | replace: page.lang, page.pair | split: '-' | last | prepend: '-' %}
-            {% for post in site.posts %}
-                {% if post.url contains page.pair %}
-                <a href="{{ post.url | relative_url }}">{% if page.lang == 'zh' %}EN{% else %}中文{% endif %}</a>
-                {% break %}
-                {% endif %}
-            {% endfor %}
-        </span>
-        {% endif %}
     </div>
 
     {% if page.translated_by %}

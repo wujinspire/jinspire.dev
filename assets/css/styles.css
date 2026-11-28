@@ -496,7 +496,7 @@ html:lang(zh) body {
     text-align: start;
 }
 
-/* Post meta (date + language switch) */
+/* Post meta (date + catalog button) */
 .post-meta {
     display: flex;
     align-items: center;
@@ -508,21 +508,6 @@ html:lang(zh) body {
     font-size: 0.95rem;
     color: #666;
     margin: 0;
-}
-
-.lang-switch a {
-    font-size: 0.85rem;
-    color: #888;
-    text-decoration: none;
-    padding: 2px 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: all 0.2s;
-}
-
-.lang-switch a:hover {
-    color: #333;
-    border-color: #999;
 }
 
 /* Improve date display (fallback for non-paired posts) */
@@ -877,7 +862,11 @@ html:lang(zh) body {
     border-radius: 4px;
     background: transparent;
     color: rgba(255,255,255,0.7);
+    font-family: inherit;
     font-size: 0.85rem;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-decoration: none;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -1152,22 +1141,10 @@ footer {
     text-align: center;
 }
 
-.lang-switch a {
-    color: var(--forest);
-    border-color: var(--line);
-    border-radius: 2px;
-}
-
 .post-meta .post-catalog-btn {
     padding: 2px 8px;
     font-size: 0.85rem;
     line-height: 1.2;
-}
-
-.lang-switch a:hover {
-    color: var(--forest-dark);
-    background: var(--wash);
-    border-color: var(--forest);
 }
 
 .catalog-panel,
