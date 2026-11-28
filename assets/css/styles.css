@@ -1220,6 +1220,7 @@ footer {
 .site-bar {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 2.5rem;
     align-items: center;
     margin-bottom: 2rem;
     padding: 0.25rem 0 1.2rem;
