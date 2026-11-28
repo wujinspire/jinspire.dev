@@ -1233,9 +1233,9 @@ footer {
 
 .site-tagline {
     grid-column: 1 / -1;
-    margin: 0.4rem 0 0;
+    margin: 0.3rem 0 0;
     color: var(--muted);
-    font-size: 0.9rem;
+    font-size: 0.78rem;
 }
 
 /* Post reading typography */
