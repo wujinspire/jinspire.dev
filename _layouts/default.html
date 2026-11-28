@@ -23,19 +23,25 @@
 <body>
     <main>
         <header{% if page.layout == 'home' %} class="home-header"
-            {%- elsif page.layout == 'post' %} class="site-bar"{% endif %}>
+            {%- elsif page.layout == 'post' %} class="site-bar"
+            {%- elsif page.layout == 'default' %} class="page-bar"{% endif %}>
             <div class="header-actions-left">
-                {% if page.layout == 'home' or page.title == 'Artifacts' %}
+                {% if page.layout == 'home' %}
                     <div class="lang-tabs">
                         <button class="lang-tab active" data-lang="en">EN</button>
                         <button class="lang-tab" data-lang="zh">中文</button>
                     </div>
-                {% elsif page.layout == 'post' %}
+                {% else %}
                     <a href="{{ '/' | relative_url }}" class="nav-link">← Home</a>
                 {% endif %}
             </div>
             <div class="header-actions">
-                {% if page.layout == 'home' %}
+                {% if page.layout == 'default' %}
+                    <div class="lang-tabs">
+                        <button class="lang-tab active" data-lang="en">EN</button>
+                        <button class="lang-tab" data-lang="zh">中文</button>
+                    </div>
+                {% elsif page.layout == 'home' %}
                     <div class="social-links" aria-label="Social links">
                         <a
                             href="https://www.linkedin.com/in/jin-wu-133b1890/"
@@ -62,7 +68,7 @@
                     </div>
                 {% endif %}
             </div>
-            <h1>{{ site.title }}</h1>
+            {% unless page.layout == 'default' %}<h1>{{ site.title }}</h1>{% endunless %}
             {% if page.layout == 'home' %}
             <p data-lang="en">{{ site.description }}</p>
             <p data-lang="zh">记录好奇、洞察与思考。</p>
@@ -93,9 +99,6 @@
                 class="projects-link"
                 data-lang="zh"
             >项目 →</a>
-            {% elsif page.layout == 'default' %}
-            <p>{{ site.description }}</p>
-            <a href="{{ '/' | relative_url }}" class="projects-link">← Home</a>
             {% endif %}
         </header>
 

@@ -1237,6 +1237,20 @@ footer {
     display: none;
 }
 
+/* Slim bar for standalone pages */
+.page-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0.25rem 0 1rem;
+}
+
+.page-bar .header-actions-left,
+.page-bar .header-actions {
+    position: static;
+}
+
 /* Post reading typography */
 .content > h1:first-child {
     margin: 0 0 0.75rem;
