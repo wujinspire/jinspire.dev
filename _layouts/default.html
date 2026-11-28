@@ -62,6 +62,14 @@
                     </div>
                 {% endunless %}
             </div>
+            {% if page.layout == 'post' %}
+            <p class="site-tagline">
+                {% if page.lang == 'zh' %}记录好奇、洞察与思考。{% else %}{{ site.description }}{% endif %}
+            </p>
+            {% else %}
+            <p class="site-tagline" data-lang="en">{{ site.description }}</p>
+            <p class="site-tagline" data-lang="zh">记录好奇、洞察与思考。</p>
+            {% endif %}
         </header>
 
         {{ content }}

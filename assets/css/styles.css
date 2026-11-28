@@ -38,12 +38,6 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
-header p {
-    color: rgba(255, 255, 255, 0.9);
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
 h2 {
     margin-bottom: 0.2rem;
 }
@@ -949,10 +943,6 @@ header h1 {
     letter-spacing: -0.035em;
 }
 
-.home-intro p {
-    color: var(--muted);
-}
-
 .author-bio {
     max-width: 650px;
     margin: 1.75rem auto 1.5rem;
@@ -962,7 +952,7 @@ header h1 {
 }
 
 .home-intro .author-bio {
-    margin: 1.5rem auto 1rem;
+    margin: 0 auto 1rem;
 }
 
 .author-bio__label {
@@ -1239,6 +1229,13 @@ footer {
 
 .site-bar .header-actions {
     justify-self: end;
+}
+
+.site-tagline {
+    grid-column: 1 / -1;
+    margin: 0.4rem 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
 }
 
 /* Post reading typography */
